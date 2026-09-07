@@ -3,7 +3,7 @@
 # Rice Mutant NGS Variant Analysis
 # Step 4: Variant calling from coordinate-sorted BAM
 
-mkdir -p ../variants
+mkdir -p ../results
 
 bcftools mpileup \
   -f ../reference/Oryza_sativa.IRGSP-1.0.dna.toplevel.fa \
@@ -12,8 +12,8 @@ bcftools mpileup \
 bcftools call \
   -mv \
   -Oz \
-  -o ../variants/rice_mut1.vcf.gz
+  -o ../results/rice_mut1.raw.vcf.gz
 
-bcftools index ../variants/rice_mut1.vcf.gz
+bcftools index ../results/rice_mut1.raw.vcf.gz
 
 echo "Variant calling completed."
