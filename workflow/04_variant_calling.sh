@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Rice Mutant NGS Variant Analysis
-# Step 4: Variant calling
+# Step 4: Variant calling from coordinate-sorted BAM
+
+mkdir -p ../variants
 
 bcftools mpileup \
   -f ../reference/Oryza_sativa.IRGSP-1.0.dna.toplevel.fa \
