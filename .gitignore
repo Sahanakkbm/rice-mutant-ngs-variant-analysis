@@ -1,0 +1,64 @@
+# Large intermediate files
+results/rice_mut1_depth.txt
+
+# Temporary candidate/intermediate files
+results/candidate_depth.txt
+results/candidate_pileup.txt
+results/candidate_positions.txt
+results/candidate_positions.bed
+results/rice_mut1_final_candidates.tsv
+results/rice_mut1_clean.tsv
+
+# Temporary validation files
+results/rice_mut1_candidate_validation.tsv
+results/rice_mut1_candidate_validation2.tsv
+results/rice_mut1_candidate_validation3.tsv
+
+# Exploratory intermediate candidate files
+results/rice_mut1_top_variants.tsv
+results/rice_mut1_stop_gained.tsv
+results/rice_mut1_stop_lost.tsv
+results/rice_mut1_start_lost.tsv
+results/rice_mut1_splice.tsv
+results/rice_mut1_stop_start.tsv
+results/rice_mut1_high_impact_candidates.tsv
+results/rice_mut1_gene_candidates.tsv
+results/rice_mut1_gene_level.tsv
+results/rice_mut1_gene_annotated.tsv
+results/rice_mut1_functional_HIGH.tsv
+results/rice_mut1_unique_candidates.tsv
+results/rice_mut1_unknown_candidates.tsv
+results/rice_mut1_unique_genes.txt
+results/unique_gene_ids.txt
+
+# Raw sequencing data
+raw_data/
+
+# Reference genome files
+reference/
+
+# Alignment files
+alignment/
+
+# Trimmed sequencing data
+trimmed/
+
+# Annotation/intermediate data
+annotation/
+
+# Redundant/intermediate result tables
+results/candidates_prioritization.tsv
+results/gene_entrez_ids.tsv
+results/high_impact_candidates.tsv
+results/rice_mut1.high_impact.tsv
+results/rice_mut1.vcf.stats.txt
+results/rice_mut1_HIGH.tsv
+results/rice_mut1_candidate_annotated.tsv
+results/rice_mut1_final_table.tsv
+results/rice_mut1_fastqc.zip
+results/rice_mut1_trimmed_fastqc.zip
+results/rice_mut1_unique_gene_table.tsv
+
+# SnpEff summary outputs
+snpEff_genes.txt
+snpEff_summary.html
