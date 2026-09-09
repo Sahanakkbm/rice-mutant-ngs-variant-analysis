@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Rice Mutant NGS Variant Analysis
-# Step 5: Variant filtering using bcftools
+# Step 5: Variant filtering and functional annotation
 
 mkdir -p ../results
 
@@ -13,4 +13,8 @@ bcftools view \
 
 bcftools index ../results/rice_mut1.filtered.vcf.gz
 
-echo "Variant filtering completed."
+snpEff Oryza_sativa_IRGSP1 \
+  ../results/rice_mut1.filtered.vcf.gz \
+  > ../results/rice_mut1.annotated.vcf
+
+echo "Variant filtering and functional annotation completed."
